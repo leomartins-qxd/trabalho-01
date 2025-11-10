@@ -1,0 +1,36 @@
+id,codigo,nome,categoria,preco
+1,451,Arroz,Grão,50.0
+2,789,Feijão,Grão,2.0
+3,123,Macarrão,Massa,25.5
+4,567,Óleo de Soja,Óleo,8.9
+5,890,Sal,Tempero,4.2
+6,234,Açúcar,Tempero,7.5
+7,678,Café,Bebida,2.1
+8,901,Leite,Laticínio,5.0
+9,345,Pão de Forma,Padaria,14.8
+10,765,Queijo Prato,Frio,4.5
+11,432,Presunto,Frio,6.7
+12,876,Peito de Frango,Frio,15.0
+13,109,Peixe Tilápia,Frio,12.3
+14,543,Maçã,Fruta,18.0
+15,210,Banana,Fruta,22.0
+16,654,Laranja,Fruta,6.0
+17,987,Alface,Hortifruti,3.5
+18,321,Tomate,Hortifruti,4.0
+19,753,Cebola,Hortifruti,3.0
+20,951,Batata,Hortifruti,8.0
+21,852,Cenoura,Hortifruti,5.5
+22,159,Sabão em Pó,Limpeza,4.8
+23,486,Shampoo,Higiene,3.9
+24,753,Detergente,Limpeza,19.9
+25,369,Refrigerante,Bebida,23.4
+26,147,Suco de Laranja,Bebida,2.8
+27,258,Água Mineral,Bebida,8.5
+28,963,Vinho Tinto,Bebida,10.0
+29,145,Cerveja,Bebida,2.5
+30,785,Iogurte,Laticínio,45.0
+31,236,Manteiga,Laticínio,3.8
+32,985,Ovos (Dúzia),Frio,6.2
+33,175,Parafuso,Mercearia,9.0
+34,305,Controle,Eletrônico,16.0
+35,407,Tangerina,Fruta,3.7
