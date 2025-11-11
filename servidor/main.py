@@ -7,28 +7,8 @@ app = FastAPI()
 lock = asyncio.Lock()
 
 
-contador_id = 36
-produtos_df = pd.DataFrame(
-    {
-        "id": list(range(1, contador_id)),
-        "codigo": [451, 789, 123, 567, 890, 234, 678, 901, 345, 765,
-            432, 876, 109, 543, 210, 654, 987, 321, 753, 951,
-            852, 159, 486, 753, 369, 147, 258, 963, 145, 785,
-            236, 985, 175, 305, 407],
-        "nome": ["Arroz", "Feijão", "Macarrão", "Óleo de Soja", "Sal", "Açúcar", "Café", "Leite", "Pão de Forma", "Queijo Prato",
-            "Presunto", "Peito de Frango", "Peixe Tilápia", "Maçã", "Banana", "Laranja", "Alface", "Tomate", "Cebola",
-            "Batata", "Cenoura", "Sabão em Pó", "Shampoo", "Detergente", "Refrigerante", "Suco de Laranja", "Água Mineral",
-            "Vinho Tinto", "Cerveja", "Iogurte", "Manteiga", "Ovos (Dúzia)", "Parafuso", "Controle", "Tangerina" ],
-        "categoria": ["Grão", "Grão", "Massa", "Óleo", "Tempero", "Tempero", "Bebida", "Laticínio", "Padaria", "Frio",
-            "Frio", "Frio", "Frio", "Fruta", "Fruta", "Fruta", "Hortifruti", "Hortifruti", "Hortifruti",
-            "Hortifruti", "Hortifruti", "Limpeza", "Higiene", "Limpeza", "Bebida", "Bebida", "Bebida",
-            "Bebida", "Bebida", "Laticínio", "Laticínio", "Frio", "Mercearia", "Eletrônico", "Fruta"],
-        "preco": [50.00, 2.00, 25.50, 8.90, 4.20, 7.50, 2.10, 5.00, 14.80, 4.50, 
-            6.70, 15.00, 12.30, 18.00, 22.00, 6.00, 3.50, 4.00, 3.00, 8.00, 
-            5.50, 4.80, 3.90, 19.90, 23.40, 2.80, 8.50, 10.00, 2.50, 45.00, 
-            3.80, 6.20, 9.00, 16.00, 3.70]
-    }
-)
+produtos_df = pd.read_csv('produtos.csv')
+contador_id = int(produtos_df['id'].max())+1
 
 class Produto(BaseModel):
     codigo: int
