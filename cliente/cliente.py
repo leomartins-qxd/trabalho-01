@@ -7,7 +7,6 @@ def criar_produto(produto):
         f"{BASE_URL}/produtos",
         json = {"codigo": produto.get("codigo"), "nome": produto.get("nome"), "categoria": produto.get("categoria"), "preco" : produto.get("preco")}
     )
-    print("TESTANDOOOOOOOOO")
     print(resp.json())
     return resp
 
